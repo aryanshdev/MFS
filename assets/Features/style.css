@@ -1,0 +1,139 @@
+
+
+.featuress *{
+    
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      
+}
+
+.featuress .section-heading{
+    text-align: center;
+    font-family: 'Syne' , sans-serif;
+    font-weight: 800;
+    line-height: 1.14;
+    font-size: 3.2rem;
+}
+  section .featuress{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+  }
+  .featuress .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  .featuress .column {
+    width: 100%;
+    padding: 0 1em 1em 1em;
+    text-align: center;
+    width: 400px;
+  }
+  .featuress .card {
+    width: 100%;
+    height: 100%;
+    padding: 2em 1.5em;
+    background: linear-gradient(#ffffff 50%, #0a0a0a 50%);
+    background-size: 100% 200%;
+    background-position: 0 2.5%;
+    border-radius: 5px;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .featuress h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1f194c;
+    margin: 1em 0;
+  }
+  .featuress p {
+    color: #575a7b;
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+  }
+  .featuress .icon-wrapper {
+    background-color: #0a0a0a;
+    position: relative;
+    margin: auto;
+    font-size: 30px;
+    height: 2.5em;
+    width: 2.5em;
+    color: #ffffff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    transition: 0.5s;
+  }
+  .featuress .card:hover {
+    box-shadow: 0 0 10px white;
+    background-position: 0 100%;
+  }
+  .featuress .card:hover .icon-wrapper {
+    background-color: #ffffff;
+    color: #0a0a0a;
+  }
+  .featuress .card:hover h3 {
+    color: #ffffff;
+  }
+  .featuress .card:hover p {
+    color: #f0f0f0;
+  }
+ 
+  .hovereffectCard{
+    border: 8px solid white;
+    margin: 3%;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    transition: 300ms ease-in-out;
+  }
+
+  .hovereffectCardImage{
+    width: 100%;
+    border-radius: 10px;
+    max-height: 400px;
+    object-fit: cover;
+    transition: 400ms ease-in-out;
+  }
+
+  .hovereffectCardBody{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #000000bd;
+    backdrop-filter: blur(7.5px);
+    padding: 35px 25px;
+    transition: 350ms ease-in-out; 
+  }
+
+  .hovereffectCard:hover .hovereffectCardBody{
+    right: 0;
+  }
+  .hovereffectCard:hover .hovereffectCardImage{
+    scale: 1.5;
+  }
+  
+  
+  .hovereffectCard:hover{
+    box-shadow: 0 0 12px 2px white;
+  }
+
+  .hovereffectCardBody .title{
+    margin-bottom: 20px;
+    font-size: 1.65rem;
+    font-weight: 600;
+  }
+  .hovereffectCardBody .info{
+    font-size: 1.25rem;
+  }

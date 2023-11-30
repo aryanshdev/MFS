@@ -1,0 +1,73 @@
+
+section .testi{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2196f3;
+    overflow: hidden;
+
+}
+
+
+    .swiper {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 320px !important;
+      height: 448px !important;
+      background: #fff;
+     
+      filter: blur(4px);
+      background: #0a0a0a;
+      border-radius: 10px;
+      margin-top: 25px;
+      
+    }
+
+    .swiper-slide p{
+      color: #0a0a0a;
+    }
+
+    .swiper-slide-active{
+      filter: blur(0px);
+    }
+    .testimonialBox{
+      background-color: white;
+      position: relative;
+      width: 100%;
+      padding: 40px;
+      padding-top: 90px;
+      color: black;
+      height: 425px;
+
+    }
+    
+   .testimonialBox .right-quote{
+    height: 40px;
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      opacity: 0.2;
+      
+   }
+
+   .swiper-3d .swiper-slide-shadow-left,
+   .swiper-3d .swiper-slide-shadow-right {
+      background-image: none;
+   }
+
+   .testimonialBox .details h3{
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #2196f3;
+    line-height: 1.1em;
+   }
