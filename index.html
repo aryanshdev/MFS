@@ -122,7 +122,9 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link link text-black display-7" href="./forms.html"
+                <a
+                  class="nav-link link text-black display-7"
+                  href="./forms.html"
                   >CONTACT US
                 </a>
               </li>
@@ -155,6 +157,7 @@
                 class="btn-close text-reset"
                 data-bs-dismiss="offcanvas"
                 aria-label="Close"
+                style="filter: invert(1) brightness(10)"
               ></button>
               <div class="top">
                 <img
@@ -202,7 +205,11 @@
                   alt=""
                   style="width: 40px"
                 />
-                <a class="nav-link link" href ="https://instagram.com/madeforsolution_">@madeforsolution_</a>
+                <a
+                  class="nav-link link"
+                  href="https://instagram.com/madeforsolution_"
+                  >@madeforsolution_</a
+                >
                 <img
                   src="./assets/founders/jwbxjkwhxug2ts8902-]=wooi2ghvx2o89psuh2iusyu03-syu2isu29s3udig3o49d29ydodu2us2g9sip2ydfg82d2td989o22gsi2uydf89293-s]2[udgsi32uieuyiduty29pydi2'[3dii2;'pdug2;u3td789.png"
                   style="width: 40px"
@@ -414,6 +421,8 @@
       <div
         class="container-fluid"
         style="
+        height: 100vh;
+        display: flex;
           background-color: #000000a5;
           backdrop-filter: blur(10px);
           padding: 100px;
@@ -429,12 +438,16 @@
           >
             <div class="text-container" style="width: 100%; padding: 0px">
               <div class="text-wrapper" style="width: 100%">
-                <p class="label-text mbr-fonts-style display-5">
+                <p
+                  class="label-text mbr-fonts-style display-5"
+                  style="font-size: 2.5rem"
+                >
                   <strong> What We Do? </strong>
                 </p>
+                <br /><br />
                 <h2
                   class="mbr-section-title mbr-fonts-style display-7"
-                  style="color: white"
+                  style="color: white; font-size: x-large; line-height: 50px;"
                 >
                   We revolutionize businesses with advanced machine learning,
                   deep learning, and data analytics. From real-time chatbot
@@ -540,8 +553,10 @@
     </section>
 
     <section class="featuress" id="services">
+      <br><br>
       <div class="row">
         <h2 class="section-heading">Services</h2>
+       
       </div>
       <div class="row">
         <div class="column">
@@ -549,6 +564,7 @@
             <div class="icon-wrapper">
               <i class="fa-solid fa-arrow-trend-up"></i>
             </div>
+            
             <h3>Data Analytics</h3>
             <p>
               Customized Data Analytics services transform raw data into
@@ -630,11 +646,7 @@
       </div>
     </section>
 
-    <section
-      data-bs-version="5.1"
-      class="content1 cid-t0rzCdb6Oa"
-      id="reviews"
-    >
+    <section data-bs-version="5.1" class="content1 cid-t0rzCdb6Oa" id="reviews">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-12 col-lg-12">
@@ -645,7 +657,7 @@
         </div>
       </div>
     </section>
-
+<br><br>
     <section
       data-bs-version="5.1"
       class="people2 cid-t0rzvBFurM"
@@ -812,10 +824,15 @@
       </div>
     </section>
 
-    <footer class="footer-distributed">
+    <footer class="footer-distributed" style="display: flex">
       <div class="footer-left">
-        <img src="darkshade.png" style="width: 55%; margin: auto;" srcset="">
-
+        <img src="darkshade.jpeg" style="width: 25%" srcset="" />
+        <p
+        class="footer-company-name"
+        style="color: black !important; font-weight: 700"
+      >
+        Made For Solutions
+      </p>
         <p class="footer-links">
           <a href="#home" class="link-1">Home</a>
 
@@ -826,13 +843,13 @@
           <a href="./forms.html">Contact Us</a>
         </p>
 
-        <p class="footer-company-name" style="color: black !important; font-weight: 700;">Made For Solutions</p>
+        
       </div>
 
       <div class="footer-center" style="margin-top: 80px">
         <div>
           <i class="fa fa-phone"></i>
-          <p>+1.555.555.5555</p>
+          <p><a href="tel:+917823087551">+91 78230 87551</a></p>
         </div>
 
         <div style="margin-top: 10px">
@@ -846,128 +863,132 @@
       <div class="footer-right">
         <p class="footer-company-about">
           <span>About the company</span>
-          We are a vibrant organization that focuses in innovative technological solutions.
+          We are a vibrant organization that focuses in innovative technological
+          solutions.
         </p>
 
         <div class="footer-icons">
-          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i style="height: 90%;" class="fa-brands fa-facebook"></i></a>
 
-          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="https://instagram.com/madeforsolution_"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i style="height: 90%;" class="fa-brands fa-linkedin"></i></a>
+          <a href="https://instagram.com/madeforsolution_"
+            ><i style="height: 90%;" class="fa-brands fa-instagram"></i
+          ></a>
         </div>
       </div>
     </footer>
     <style>
-      /* Typewriter effect 1 */
-      @keyframes typing {
+            /* Typewriter effect 1 */
+            @keyframes typing {
 
-        0.0000%,
-        69.23076% {
-          content: "";
-        }
+              0.0000%,
+              69.23076% {
+                content: "";
+              }
 
-        3.846153%,
-        65.384606% {
-          content: "S";
-        }
+              3.846153%,
+              65.384606% {
+                content: "S";
+              }
 
-        7.692306%,
-        61.538453% {
-          content: "So";
-        }
+              7.692306%,
+              61.538453% {
+                content: "So";
+              }
 
-        11.53846%,
-        57.6923% {
-          content: "Sol";
-        }
+              11.53846%,
+              57.6923% {
+                content: "Sol";
+              }
 
-        15.384613%,
-        53.84614% {
-          content: "Solu";
-        }
+              15.384613%,
+              53.84614% {
+                content: "Solu";
+              }
 
-        19.23076%,
-        49.999% {
-          content: "Solut";
-        }
+              19.23076%,
+              49.999% {
+                content: "Solut";
+              }
 
-        23.07692%,
-        46.15384% {
-          content: "Soluti";
-        }
+              23.07692%,
+              46.15384% {
+                content: "Soluti";
+              }
 
-        26.923073%,
-        42.30768% {
-          content: "Solutio";
-        }
+              26.923073%,
+              42.30768% {
+                content: "Solutio";
+              }
 
-        30.7692%,
-        38.46153% {
-          content: "Solution";
-        }
+              30.7692%,
+              38.46153% {
+                content: "Solution";
+              }
 
-        70%,
-        99% {
-          content: "";
-        }
+              70%,
+              99% {
+                content: "";
+              }
 
-        73.076915%,
-        96.15384% {
-          content: "Y";
-        }
+              73.076915%,
+              96.15384% {
+                content: "Y";
+              }
 
-        76.92307%,
-        92.307689% {
-          content: "Yo";
-        }
+              76.92307%,
+              92.307689% {
+                content: "Yo";
+              }
 
-        80.7692249%,
-        88.4615% {
-          content: "You";
-        }
-      }
+              80.7692249%,
+              88.4615% {
+                content: "You";
+              }
+            }
 
-      @keyframes blink {
+            @keyframes blink {
 
-        0%,
-        100% {
-          opacity: 0;
-        }
+              0%,
+              100% {
+                opacity: 0;
+              }
 
-        50% {
-          opacity: 0;
-        }
-      }
+              50% {
+                opacity: 0;
+              }
+            }
 
-      .typewriter {
-        --caret: currentcolor;
-      }
+            .typewriter {
+              --caret: currentcolor;
+            }
 
-      .typewriter::before {
-        content: "";
-        animation: typing 5s infinite;
-      }
+            .typewriter::before {
+              content: "";
+              animation: typing 5s infinite;
+            }
 
-      .typewriter::after {
-        content: "";
-        visibility: hidden;
-        border-right: 1px solid var(--caret);
-        animation: blink 0.5s linear infinite;
-      }
+            .typewriter::after {
+              content: "";
+              visibility: hidden;
+              border-right: 1px solid var(--caret);
+              animation: blink 0.5s linear infinite;
+            }
 
-      .typewriter.thick::after {
-        border-right: 1ch solid var(--caret);
-      }
+            .typewriter.thick::after {
+              border-right: 1ch solid var(--caret);
+            }
 
-      .typewriter.nocaret::after {
-        border-right: 0;
-      }
+            .typewriter.nocaret::after {
+              border-right: 0;
+            }
 
 
-      @media (prefers-reduced-motion) {
-        .typewriter::after {
-          animation: none;
-        }
+            @media (prefers-reduced-motion) {
+              .typewriter::after {
+                animation: none;
+              }
+
     </style>
 
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>

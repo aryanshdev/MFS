@@ -16,12 +16,12 @@
         <ul>
             <li>
                 <a href="index.html" class="logo">
-                    <div class="images">
-                        <img src="darkshade.png" title = "Publius" class  =" logo-forDark">
-                        <img src="darkshade.png" title = "Publius" class="logo-forLight">
+                    <div class="images" >
+                        <img src="darkshade.jpeg" style="border-radius: 25%;" title = "MFS" class  =" logo-forDark">
+                        <img src="darkshade.jpeg" style="border-radius: 25%;" title = "MFS" class="logo-forLight">
                     </div>
                    
-                    <h2>MFS<span>.</span></h2>
+                    <h2>MFS<span></span></h2>
                 </a>
             </li>
             <li>
@@ -48,43 +48,43 @@
                     <div class="contact-heading">
                         <h1> We can Surely Help  </h1>
                         <h1> you With Service!!! <span>.</span></h1>
-                        <p class="text">Or reach us via : <a href = "mailto:madeforsolution@gmail.com">madeforsolution@gmail.com</a></p>
+                        <p class="text">Or reach us via : <a class="email" href = "mailto:madeforsolution@gmail.com">madeforsolution@gmail.com</a></p>
                     </div>
 
-                    <form  name="ontact-form" class="contact-form">
+                    <form  action="javascript:submitForm()" name="contact-form" class="contact-form">
                         <div class="input-wrap">
-                            <input class  = " contact-input" autocomplete="off" name = "Full Name" type="text" required>
+                            <input required  class  = " contact-input" autocomplete="off" name = "Name" type="text" required>
                             <label>Full Name</label>
                             
                             <i class="icon fa-regular fa-user"></i>
                         </div>
 
                         <div class="input-wrap">
-                            <input class  = " contact-input" autocomplete="off" name = "Phone Number" type="tel " required>
+                            <input required  class  = " contact-input" autocomplete="off" name = "Phone" type="number " required>
                             <label>Phone Number</label>
                             <i class="icon fa-solid fa-phone"></i>
                         </div>
 
                         <div class="input-wrap w-100">
-                            <input class  = " contact-input" autocomplete="off" name = "Email" type="email" required>
+                            <input required  class  = " contact-input" id="email" autocomplete="off" name = "Email" type="email" required>
                             <label>Email</label>
                             <i class="icon fa-solid fa-envelope"></i>
                         </div>
 
                         <div class="input-wrap w-100">
-                            <input class  = " contact-input" autocomplete="off" name = "Company" type="text" required>
+                            <input required  class  = " contact-input" autocomplete="off" name = "Company" type="text" required>
                             <label>Company Name/Entity</label>
                             <i class="icon fa-solid fa-building"></i>
                         </div>
 
                         <div class="input-wrap textarea w-100">
-                            <textarea name="Message" autocomplete="off" class="contact-input" required></textarea>
+                            <textarea required name="Message" autocomplete="off" class="contact-input" required></textarea>
                             <label>Message</label>
                             <i class="icon fa-solid fa-inbox"></i>
                         </div>
 
                         <div class="wrapper">
-                            <a onclick="submitForm()">Submit </a>
+                            <button type="submit" id="submitButton">Submit</button>
                           </div>
 
                   
@@ -110,11 +110,13 @@
         </div>
     </section>
   </main>
-<script></script>
+
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"></script>
   <script src="./app.js"></script>
 </body>
-
+<script>
+    document.getElementsByClassName("theme-toggle")[0].click()
+</script>
 </html>
