@@ -13,6 +13,7 @@
     font-size: xx-large;
 }
 .founders{
+    
     width: 100%;
     font-size: large;
 }
@@ -26,6 +27,8 @@
 
 .founders .middle * {
     padding: 5%;
+    line-height: 30px;
+    font-size: large;
 }
 
 .founders .end{
