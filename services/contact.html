@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Contact For Services</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section class="ftco-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6 text-center mb-5">
+            <h2 class="heading-section">Contact For Service</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-10 col-md-12">
+            <div class="wrapper">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <div class="contact-wrap">
+                    <h3 class="mb-4 text-center">Get in touch with us</h3>
+                    <div
+                      id="form-message-warning"
+                      class="mb-4 w-100 text-center"
+                    ></div>
+                    <div
+                      id="form-message-success"
+                      class="mb-4 w-100 text-center"
+                    >
+                      Your message was sent, thank you!
+                    </div>
+                    <form
+                      action="javascript:submitForm()"
+                      id="servicesForm"
+                      name="servicesForm"
+                      class="servicesForm"
+                    >
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <input
+                            required
+                              type="text"
+                              class="form-control"
+                              name="Name"
+                              id="name"
+                              placeholder="Name"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <input
+                            required
+                              type="email"
+                              class="form-control"
+                              name="Email"
+                              id="email"
+                              placeholder="Email"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                              <input
+                              required
+                                type="text"
+                                class="form-control"
+                                name="Company"
+                                id="comp"
+                                placeholder="Company / Entity"
+                              />
+                            </div>
+                          </div>
+
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <select
+                            required
+                              onchange="colorChange()"
+                              style="color: #5b5b5b"
+                              name="Service"
+                              id="service-selector"
+                            >
+                              <option value="NULL" disabled selected class="selectMSG">
+                                Select a Service
+                              </option>
+                              <option value="Data Analytics">
+                                Data Analytics
+                              </option>
+                              <option value="Fraud Detection">
+                                Fraud Detection
+                              </option>
+                              <option value="Real Time Chatbot">
+                                Real Time Chatbot
+                              </option>
+                              <option value="Customer Churn Modelling">
+                                Customer Churn Modelling
+                              </option>
+                              <option value="Deep Learning Services">
+                                Deep Learning Services
+                              </option>
+                              <option value="Machine Learning Services">
+                                Machine Learning Services
+                              </option>
+                            </select>
+                          </div>
+                        </div>
+                        
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <textarea
+                            required
+                              name="Message"
+                              class="form-control"
+                              id="message"
+                              cols="30"
+                              rows="8"
+                              placeholder="Message"
+                            ></textarea>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <button
+                            id="submitButton"
+                              type="submit"
+                              value="Send Message"
+                              class="btn btn-primary"
+                            >Submit</button>
+                            <div class="submitting"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      function colorChange() {
+        if (document.getElementById("service-selector").value === "NULL") {
+          document.getElementById("service-selector").style.color = "#5b5b5b";
+        } else {
+          document.getElementById("service-selector").style.color = "white";
+        }
+      }
+
+      function submitForm() {
+        const form = document.forms["servicesForm"];
+  const scriptURL =
+    "https://script.google.com/macros/s/AKfycby-fvva5pmvKadjMGXYt9Svp_a8szogxN6m5ELaEiCh5g7NpJUOFFOfHcH7z9OvMP-q/exec";
+  document.getElementById("submitButton").disabled = true;
+
+if( document.getElementById("email").value.match(/^[a-zA-Z0-9]+(?:\.[a-zA-Z0-9]+)*@[a-zA-Z0-9]+(?:\.[a-zA-Z0-9]+)*$/) == document.getElementById("email").value){
+  fetch(scriptURL, { method: "POST", body: new FormData(form) })
+  .then((response) => (window.location.href = "./thanks.html"))
+  .catch((error) => {
+    document.getElementById("submitButton").disabled = false;
+  });
+}
+else{
+  alert("Invalid E-Mail, Please Check Your E-Mail And Try Again")
+}
+      }
+    </script>
+  </body>
+</html>
