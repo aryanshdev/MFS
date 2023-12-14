@@ -1179,11 +1179,28 @@ b {
   .cid-t0rvTLHnTw .navbar-nav {
     padding-top: 18px;
   }
+
 }
+
+
+@media (max-width:770px) {
+  .cid-t0rxrNblCE{
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  
+  .cid-t0rxrNblCE h4{
+    line-height: 30px !important;
+  } 
+   #whatwedo .container-fluid{
+    padding-top:  4% !important;
+  }
+}
+
 .cid-t0rvTLHnTw .nav-item .nav-link {
   color: transparent;
   margin: 12px 22px !important;
-  background-image: linear-gradient(-90deg, #5cc2ed 0, #5d62ee 25%, #c298d3 50%, currentColor 51%, currentColor 100%) !important;
+  background-image: linear-gradient(-90deg, #b1bd3c 0, #ebff00 25%, #cf9d6b 50%, currentColor 51%, currentColor 100%) !important; 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: 200% 100%;
