@@ -1195,6 +1195,9 @@ b {
    #whatwedo .container-fluid{
     padding-top:  4% !important;
   }
+  #whatwedo h2{
+    line-height: 30px !important;
+  }
 }
 
 .cid-t0rvTLHnTw .nav-item .nav-link {
